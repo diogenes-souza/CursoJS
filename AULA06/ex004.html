@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body
+        {
+            font: normal 40pt Arial;
+            background-color: purple;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Digite seu nome: ')
+        document.write('Olá '+ nome +'!, Seu nome tem ' + nome.length + ' letras </br>')
+        document.write(`Seu nome em maiusculo seria: ${nome.toUpperCase()} </br>`)
+        document.write(`Seu nome em minusculo seria: ${nome.toLowerCase()}`)
+
+        /*
+        variavel.lenth -> retorna o numero de caracteres dentro da variavel(tamanho da variavel)
+        variavel.toUpperCase -> todas as letras em Maiusculo
+        variavel.toLowerCase -> todas as letras em Minusculo
+        */
+    </script>
+</body>
+</html>

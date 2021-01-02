@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Programa...</title>
+    <style>
+        body
+        {
+            background-color: rgb(102, 5, 102);
+            color: white;
+            font-size: 20pt Arial;
+        }
+
+        h1
+        {
+            color:rgb(224, 224, 26);
+            font-size: 40pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, dolor beatae eligendi, hic eaque repellat exercitationem repellendus autem quod, ipsa corporis? Nesciunt tempora enim aliquam assumenda quam rerum exercitationem illum?</p>
+
+    <script>
+        var numero1 = Number.parseFloat(window.prompt('Digite um número: '))
+        var numero2 = Number.parseFloat(window.prompt('Digite outro número para ver a soma: '))
+        var soma = numero1 + numero2
+        window.alert('A soma dos numeros é: ' + soma) // Concatenação
+        window.alert(`A soma de ${numero1} + ${numero2} é de: ${soma}`)
+        /*
+        (number + number) o JS faz a soma
+        (String + String) o JS concatena
+        No JS tudo que é recebido no window.prompt é considerado como string
+
+        para converter string para number, pode-se usar:
+        Number.parceInt(variavel)
+        Number.parceFloat(variavel)
+        ou usar apenas Number(variavel)
+
+        Para converter o valor em uma string pode-se usar:
+        String(nome da variavel)
+        nome_da_variavel.toString()
+
+        Existem 2 jeitos de printar a variavel
+        o primeiro seria usando a concatenação, conforme mostrado acima e o outro jeito seria usando ${variavel}
+
+        pode usar também, os comandos
+        variavel.lenth -> retorna o numero de caracteres dentro da variavel(tamanho da variavel)
+        variavel.toUpperCase -> todas as letras em Maiusculo
+        variavel.toLowerCase -> todas as letras em Minusculo
+        */
+    </script>
+</body>
+</html>
