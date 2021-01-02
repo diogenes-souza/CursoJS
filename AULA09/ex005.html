@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM...</title>
+
+    <style>
+        body
+        {
+            font: normal 20pt Arial;
+            background-color: rgb(93, 141, 213);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado!</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="matrix">Clique em mim!</div>
+    <div class="mandalore">O planeta de Mandalore</div>
+    <script>
+        /*
+        Selecionando e alterando o paragrafo pelo nome da Tag em HTML
+        var paragrafo = window.document.getElementsByTagName('p')[1]
+        paragrafo.style.backgroundColor = 'black'
+        */
+        
+        /*
+        Selecionado e alterando o corpo todo do HTML (body)
+        var corpo = window.document.body
+        corpo.style.background = 'red'
+        */
+
+        /*
+        Selecionando e alterando o paragrafo pelo nome da Tag em HTML
+        var divisoria = window.document.getElementById('matrix')
+        divisoria.style.backgroundColor = 'purple'
+        divisoria.style.color = 'blue'
+        */
+        
+        var _div = window.document.querySelector('div.mandalore')
+        _div.style.background = 'green'
+        _div.style.color = 'blue'
+        
+    </script>
+</body>
+</html>
