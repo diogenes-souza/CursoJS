@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Imigration</title>
+
+    <style>
+        body
+        {
+            background-color: #F0F8FF;
+            font-family: sans-serif;
+            font-size: 1em;
+            color: #59429d;
+            margin-left: 36%;
+            margin-top: 2%;
+            justify-content: center;
+        }
+        input, button {
+            font-family: sans-serif;
+            font-size: 1em;
+            color: #59429d;
+            border-radius: 5px;
+        }
+
+        #resultado 
+        {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Imigração</h1>
+
+    <label for="txtpais"><strong>Qual o seu país de Origem:</strong></label>
+    <input type="text" name="txtpais" id="txtpais" required>
+
+    <input type="button" value="Verificar nacionalidade" onclick="verificar()">
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function verificar()
+        {
+            var p = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#resultado')
+            
+            var pais = p.value
+
+            if(pais == '') 
+            {
+                res.innerHTML = '<p>Digite o seu país de origem!!!</p>'
+            }else
+            {
+                resultado.innerHTML = `<p>Vivendo no(a) <strong>${pais}</strong></p>`
+                if(pais == 'Brasil' || pais == 'brasil') 
+                {
+                    res.innerHTML += '<p>Você é <strong>brasileio(a)</strong></p>'
+                }else
+                {
+                    res.innerHTML += '<p>Você é <strong>estrangeiro(a)</strong></p>'
+                }
+            }
+        }
+    </script>
+</body>
+</html>
