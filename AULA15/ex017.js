@@ -31,8 +31,9 @@ if(exemplo==1){
 else{
     let num = [5, 8, 7, 5, 8, 2, 90]
 
-    num.push(100)
+    num.push(10) 
     num.sort()
+
     console.log(num)
     console.log('numero de posições: ' + num.length)
     console.log(`o primeiro valor de num é: ${num[0]}`)
