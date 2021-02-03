@@ -25,6 +25,8 @@ function contar() {
             //contagem crescente
             for(let cont = i; cont <= f; cont = cont + p){
                 resultado.innerHTML += ` ${cont} \u{1f449}`
+                
+                //https://unicode.org/emoji/charts/full-emoji-list.html
             }
         }
         else
@@ -35,5 +37,6 @@ function contar() {
             }
         }
         resultado.innerHTML += ` \u{1f3c1} `
+        //https://unicode.org/emoji/charts/full-emoji-list.html
     }
 }
