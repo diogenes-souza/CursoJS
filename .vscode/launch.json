@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Program",
             "skipFiles": ["<node_internals>/**"],
-            "program": "${workspaceFolder}\\Ex_JS_Parte4/script.js"
+            "program": "${workspaceFolder}\\AULA16/funcao04.js"
         }
     ]
 }

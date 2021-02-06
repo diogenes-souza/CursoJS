@@ -1,13 +1,14 @@
 //Vetores
 
-let exemplo = 2
+let exemplo = 1
 
-if(exemplo==1){
+if(exemplo==3){
 
     let num = [5, 8, 7, 5, 8, 2, 90]
 
+    num.push(100) //adiciona na ultima posição
     num.sort() //ordena o array
-    num.push(45) //adiciona na ultima posição
+    console.log(num)
 
     let x=0
     while (x < num.length){
@@ -23,9 +24,9 @@ if(exemplo==1){
 
     console.log('Divisão de repeticao...')
 
-    for(let y in num){
-        console.log(`A posição ${y} tem o valor ${num[y]}`)
-    }
+    // for(let y in num){
+    //     console.log(`A posição ${y} tem o valor ${num[y]}`)
+    // }
 }
 
 else{

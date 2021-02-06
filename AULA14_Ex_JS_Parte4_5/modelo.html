@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos contar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <div>
+            <p><!--Label e Input do Inicío-->
+                <label for="inicio">Início:</label>
+                <input type="number" id="inicio" />
+            </p>
+            
+            <p><!--Label e Input do Fim-->
+                <label for="fim">Fim:</label>
+                <input type="number" id="fim" />
+            </p>
+
+            <p><!--Label e Input do Passo-->
+                <label for="passo">Passo:</label>
+                <input type="number" id="passo" />
+            </p>
+
+            <div class="botao">
+                <button type="button" id="botao" onclick="contar()">Contar</button>
+            </div>
+        </div>
+            
+        <div>
+            <p id="resultado">
+                Preparando contagem...
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Diógenes Souza</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
